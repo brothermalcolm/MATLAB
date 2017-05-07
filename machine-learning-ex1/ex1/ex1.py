@@ -23,8 +23,8 @@
 # y refers to the profit in $10,000s
 #
 
-%% Initialization
-clear ; close all; clc
+#%% Initialization
+
 
 %% ==================== Part 1: Basic Function ====================
 % Complete warmUpExercise.m
