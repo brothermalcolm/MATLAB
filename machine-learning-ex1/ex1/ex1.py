@@ -24,16 +24,15 @@
 #
 
 #%% Initialization
+from warmUpExercise import *
 
-
-%% ==================== Part 1: Basic Function ====================
-% Complete warmUpExercise.m
-fprintf('Running warmUpExercise ... \n');
-fprintf('5x5 Identity Matrix: \n');
+#%% ==================== Part 1: Basic Function ====================
+# Complete warmUpExercise.py
+print('Running warmUpExercise ... \n');
+print('5x5 Identity Matrix: \n');
 warmUpExercise()
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+input('Program paused. Press enter to continue.\n');
 
 
 %% ======================= Part 2: Plotting =======================
