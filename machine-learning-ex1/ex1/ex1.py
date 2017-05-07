@@ -25,6 +25,8 @@
 
 #%% Initialization
 from warmUpExercise import *
+import pandas as pd
+from plotData import *
 
 #%% ==================== Part 1: Basic Function ====================
 # Complete warmUpExercise.py
@@ -35,18 +37,18 @@ warmUpExercise()
 input('Program paused. Press enter to continue.\n');
 
 
-%% ======================= Part 2: Plotting =======================
-fprintf('Plotting Data ...\n')
-data = load('ex1data1.txt');
-X = data(:, 1); y = data(:, 2);
-m = length(y); % number of training examples
+#%% ======================= Part 2: Plotting =======================
+print('Plotting Data ...\n')
+data = pd.read_csv('ex1data1.txt', header=None).values;
+X = data[:, 0]; y = data[:, 1];
+m = len(y); # number of training examples
 
-% Plot Data
-% Note: You have to complete the code in plotData.m
+# Plot Data
+# Note: You have to complete the code in plotData.m
 plotData(X, y);
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+input('Program paused. Press enter to continue.\n');
+
 
 %% =================== Part 3: Gradient descent ===================
 fprintf('Running Gradient Descent ...\n')
